@@ -20,10 +20,11 @@ int main()
         col1.push_back(i);
     }
 
+    //print all elements
     PRINT_ELEMENTS(col1, "before: ");
     cout << endl;
 
-    //print all elements
+    //add 10 to each element
     for_each (col1.begin(), col1.end(), add10);
 
     PRINT_ELEMENTS(col1, "after: ");

@@ -28,10 +28,10 @@ int main()
         col1.push_back(i);
     }
 
+    //print all elements
     PRINT_ELEMENTS(col1, "before: ");
     cout << endl;
 
-    //print all elements
     for (int i = 1; i <= 5; ++i)
     {
         for_each (col1.begin(), col1.end(), AddValue(i));

@@ -1,13 +1,11 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include "../common/print.hpp"
 using namespace std;
 
-template <int add_value>
-void add(int& elem)
+void print(int x)
 {
-    elem += add_value;
+    cout << x << ' ';
 }
 
 int main()
@@ -22,11 +20,6 @@ int main()
     }
 
     //print all elements
-    PRINT_ELEMENTS(col1, "before: ");
-    cout << endl;
-
-    for_each (col1.begin(), col1.end(), add<10>);
-
-    PRINT_ELEMENTS(col1, "after: ");
+    for_each (col1.begin(), col1.end(), print);
     cout << endl;
 }

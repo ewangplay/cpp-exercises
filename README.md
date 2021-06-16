@@ -1,4 +1,4 @@
-# golang exercises
+# cpp exercises
 
 ## stardard template library
 |topic|description|
